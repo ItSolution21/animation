@@ -1,0 +1,41 @@
+.container{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.anime{
+    height: 100px;
+    width: 100px;
+    background-color: lightblue;
+    animation-name: col;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+}
+
+@keyframes col {
+    from{
+        background-color: lightblue;
+        transform: translateX(0px);
+        transform: translateY(0px);
+        height: 100px;
+        width: 100px;
+        border-radius: 0px;
+    }   
+    to{
+        background-color: lightcoral;
+        /* transform: translateX(500px); */
+        transform: translateY(-400px);
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        box-shadow: -30px 9px 49px -15px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -30px 9px 49px -15px rgba(0,0,0,0.75);
+        -moz-box-shadow: -30px 9px 49px -15px rgba(0,0,0,0.75);
+        font-size: 56px;
+    }
+}
